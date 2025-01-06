@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="SginUp.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+            <div class="col-md-6 bg-light">
+                <div class="signup d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">Sign Up</h3>
+                                <form id="registerForm">
+                                    <div class="form-group mb-3">
+                                        <input id="firstName" type="text" placeholder="Enter First Name" required autofocus class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="lastName" type="text" placeholder="Enter Last Name" required class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="username" type="text" placeholder="Enter Username" required class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="email" type="email" placeholder="Enter Email" required class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="password" type="password" placeholder="Enter Password" required class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="confirmPassword" type="password" placeholder="Confirm Password" required class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input id="terms" type="checkbox" class="custom-control-input">
+                                        <label for="terms" class="custom-control-label">I agree to all terms</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Register</button>
+                                    <div class="text-center d-flex justify-content-between mt-4">
+                                        <p>Already have an account? <a href="Login.html" class="font-italic text-muted">
+                                            <u>Sign In</u></a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="SginUp.js"></script>
+
+</body>
+</html>

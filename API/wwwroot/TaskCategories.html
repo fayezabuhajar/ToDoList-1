@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="TaskCategories.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="TaskCategories.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>To-Do</h2>
+            
+            <nav>
+                <ul>
+                    <li><a href="Dashboard.html">Dashboard</a></li>
+                    <li><a href="#">Vital Task</a></li>
+                    <li><a href="#">My Task</a></li>
+                    <li class="active"><a href="TaskCategories.html">Task Categories</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="logout">Logout</a>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Task Categories</h1>
+                <p>Tuesday, 19/11/2024</p>
+            </header>
+
+            <section class="task-section">
+                <button class="add-button">Add Category</button>
+
+                <h2>Task Status</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Task Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskTableBody">
+                        <!-- Data will be dynamically loaded here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

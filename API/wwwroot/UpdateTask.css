@@ -1,0 +1,263 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ff6f61;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar nav ul li.active, .sidebar nav ul li:hover {
+    background-color: #e55d50;
+}
+
+.sidebar .logout {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: white;
+    color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar .logout:hover {
+    background-color: #e55d50;
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .date {
+    text-align: right;
+}
+
+.task-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main-content {
+        padding: 10px;
+    }
+}
+
+.sidebar nav ul li:hover {
+    background-color: #ff7d6a;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar {
+    background: linear-gradient(135deg, #ff6f61, #e55d50);
+}
+.done-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.done-btn:hover {
+    background-color: #e55d50;
+}
+/* إعداد البطاقة */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* إعداد العنوان */
+.card-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* إعداد الجسم */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* إعداد الحقول */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    resize: none;
+    height: 100px;
+}
+
+/* زر */
+.btn-primary {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e55d50;
+}
+
+/* إعداد مربع التحميل */
+.upload-box {
+    border: 1px dashed #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* إعداد الحقول */
+.priority-options {
+    display: flex;
+    gap: 15px; /* المسافة بين الخيارات */
+    align-items: center; /* محاذاة الخيارات بشكل أفقي */
+}
+
+.priority-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* المسافة بين النص وخانة الاختيار */
+}
+
+.priority-options input[type="radio"] {
+    margin: 0;
+}
+/* ترتيب صندوق الوصف وصندوق التحميل أفقياً */
+.horizontal-group {
+    display: flex;
+    gap: 20px; /* المسافة بين الصناديق */
+}
+
+.description-box,
+.upload-box-container {
+    flex: 1; /* يجعل الصناديق تأخذ نفس العرض */
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-box {
+    border: 1px dashed #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 100%; /* تأكد من أن الارتفاع يتماشى مع صندوق الوصف */
+}
+
+textarea.form-control {
+    resize: none;
+    height: 150px; /* ارتفاع مخصص لصندوق الوصف */
+}
